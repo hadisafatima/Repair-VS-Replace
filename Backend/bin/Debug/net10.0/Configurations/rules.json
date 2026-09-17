@@ -1,0 +1,35 @@
+{
+  "CalculationOptions": {
+    "RuleSetVersion": "2026.09.1",
+    "ProductTypes": [
+      {
+        "Id": "refrigerator",
+        "DisplayName": "Refrigerator",
+        "Category": "Appliance",
+        "TypicalLifespanYears": 13,
+        "TypicalReplacementCost": 1200,
+        "AnnualEnergyKwh": 400,
+        "EnergyDegradationPerYear": 0.02,
+        "ResidualValueFactor": 0.05,
+        "CalculationRuleId": "appliance-standard"
+      }
+    ],
+    "CalculationRules": [
+      {
+        "Id": "appliance-standard",
+        "AppliesToCategory": "Appliance",
+        "RepairCostRatioThreshold": 0.5,
+        "AgeRatioThreshold": 0.75,
+        "RepeatRepairThreshold": 3,
+        "CostWeight": 0.35,
+        "AgeWeight": 0.25,
+        "ReliabilityWeight": 0.2,
+        "EnergyWeight": 0.2,
+        "DiscountRate": 0.05,
+        "AnalysisHorizonYears": 10,
+        "ReplaceScoreThreshold": 0.65,
+        "RepairScoreThreshold": 0.35
+      }
+    ]
+  }
+}

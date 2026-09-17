@@ -1,0 +1,105 @@
+{
+  "CalculationOptions": {
+    "RuleSetVersion": "2026.09.1",
+    "ProductTypes": [
+      {
+        "Id": "laptop-budget",
+        "DisplayName": "Budget Laptop",
+        "Category": "Laptop",
+        "TypicalLifespanYears": 5,
+        "TypicalReplacementCost": 500,
+        "AnnualEnergyKwh": 40,
+        "EnergyDegradationPerYear": 0.01,
+        "ResidualValueFactor": 0.08,
+        "CalculationRuleId": "laptop-standard"
+      },
+      {
+        "Id": "laptop-midrange",
+        "DisplayName": "Mid-Range Laptop",
+        "Category": "Laptop",
+        "TypicalLifespanYears": 5,
+        "TypicalReplacementCost": 900,
+        "AnnualEnergyKwh": 45,
+        "EnergyDegradationPerYear": 0.01,
+        "ResidualValueFactor": 0.12,
+        "CalculationRuleId": "laptop-standard"
+      },
+      {
+        "Id": "laptop-premium",
+        "DisplayName": "Premium / Ultrabook Laptop",
+        "Category": "Laptop",
+        "TypicalLifespanYears": 6,
+        "TypicalReplacementCost": 1800,
+        "AnnualEnergyKwh": 50,
+        "EnergyDegradationPerYear": 0.01,
+        "ResidualValueFactor": 0.15,
+        "CalculationRuleId": "laptop-standard"
+      },
+      {
+        "Id": "phone-budget",
+        "DisplayName": "Budget Smartphone",
+        "Category": "Phone",
+        "TypicalLifespanYears": 3,
+        "TypicalReplacementCost": 250,
+        "AnnualEnergyKwh": 6,
+        "EnergyDegradationPerYear": 0.02,
+        "ResidualValueFactor": 0.12,
+        "CalculationRuleId": "phone-standard"
+      },
+      {
+        "Id": "phone-midrange",
+        "DisplayName": "Mid-Range Smartphone",
+        "Category": "Phone",
+        "TypicalLifespanYears": 3,
+        "TypicalReplacementCost": 500,
+        "AnnualEnergyKwh": 7,
+        "EnergyDegradationPerYear": 0.02,
+        "ResidualValueFactor": 0.16,
+        "CalculationRuleId": "phone-standard"
+      },
+      {
+        "Id": "phone-flagship",
+        "DisplayName": "Flagship Smartphone",
+        "Category": "Phone",
+        "TypicalLifespanYears": 4,
+        "TypicalReplacementCost": 1000,
+        "AnnualEnergyKwh": 8,
+        "EnergyDegradationPerYear": 0.02,
+        "ResidualValueFactor": 0.20,
+        "CalculationRuleId": "phone-standard"
+      }
+    ],
+    "CalculationRules": [
+      {
+        "Id": "laptop-standard",
+        "AppliesToCategory": "Laptop",
+        "RepairCostRatioThreshold": 0.40,
+        "AgeRatioThreshold": 0.70,
+        "RepeatRepairThreshold": 2,
+        "CostWeight": 0.40,
+        "AgeWeight": 0.25,
+        "ReliabilityWeight": 0.20,
+        "EnergyWeight": 0.15,
+        "DiscountRate": 0.05,
+        "AnalysisHorizonYears": 5,
+        "ReplaceScoreThreshold": 0.60,
+        "RepairScoreThreshold": 0.30
+      },
+      {
+        "Id": "phone-standard",
+        "AppliesToCategory": "Phone",
+        "RepairCostRatioThreshold": 0.35,
+        "AgeRatioThreshold": 0.65,
+        "RepeatRepairThreshold": 2,
+        "CostWeight": 0.45,
+        "AgeWeight": 0.25,
+        "ReliabilityWeight": 0.20,
+        "EnergyWeight": 0.10,
+        "DiscountRate": 0.05,
+        "AnalysisHorizonYears": 3,
+        "ReplaceScoreThreshold": 0.60,
+        "RepairScoreThreshold": 0.30
+      }
+    ]
+  }
+}
