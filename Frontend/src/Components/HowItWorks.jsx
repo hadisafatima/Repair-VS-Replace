@@ -1,46 +1,56 @@
-function Hero() {
+const STEPS = [
+    {
+        number: 1,
+        title: "Answer a few questions",
+        description:
+            "Tell it what you're deciding on, the repair cost, and what a replacement would cost. Takes about a minute.",
+    },
+    {
+        number: 2,
+        title: "It runs the numbers",
+        description:
+            "Cost per year, total cost of ownership, and break-even point — calculated instantly, nothing you enter is saved anywhere.",
+    },
+    {
+        number: 3,
+        title: "Get a clear recommendation",
+        description:
+            "Repair, replace, or a genuine toss-up — with the reasoning behind it shown, not just the verdict.",
+    },
+];
+
+function HowItWorks() {
     return (
-        <section className="bg-slate-50">
+        <section id="how-it-works" className="border-t border-line bg-surface">
             <div className="mx-auto max-w-7xl px-6 py-24">
-                <div className="max-w-3xl">
 
-                    <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-blue-600">
-                        Smart Repair & Replacement Estimator
-                    </p>
+                <h2 className="font-display text-[32px] leading-tight text-ink">
+                    How it works
+                </h2>
 
-                    <h1 className="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
-                        Repair it or replace it?
-                        <span className="block text-blue-600">
-                            Make the decision with confidence.
-                        </span>
-                    </h1>
+                <div className="mt-12 grid gap-10 sm:grid-cols-3 sm:gap-8">
+                    {STEPS.map((step) => (
+                        <div key={step.number} className="relative pl-14 sm:pl-0">
 
-                    <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                        Compare repair costs, replacement costs, expected
-                        lifespan, energy usage and other factors before
-                        making your decision.
-                    </p>
+                            <span className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-full bg-ink font-mono text-[14px] text-paper sm:static sm:mb-6">
+                                {step.number}
+                            </span>
 
-                    <div className="mt-8 flex flex-wrap gap-4">
-                        <a
-                            href="/calculator"
-                            className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
-                        >
-                            Start Estimator →
-                        </a>
+                            <h3 className="font-display text-[20px] text-ink">
+                                {step.title}
+                            </h3>
 
-                        <a
-                            href="#how-it-works"
-                            className="rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:bg-slate-100"
-                        >
-                            How It Works
-                        </a>
-                    </div>
+                            <p className="mt-2 text-[15px] leading-relaxed text-ink/60">
+                                {step.description}
+                            </p>
 
+                        </div>
+                    ))}
                 </div>
+
             </div>
         </section>
     );
 }
 
-export default Hero;
+export default HowItWorks;
