@@ -1,5 +1,5 @@
 import PageLayout from "../PageLayout";
-import { buttonSecondaryClass, dividerClass } from "./formStyles";
+import { buttonSecondaryClass, dividerClass } from "./FormStyles";
 
 const RECOMMENDATION_STYLES = {
     Repair: {

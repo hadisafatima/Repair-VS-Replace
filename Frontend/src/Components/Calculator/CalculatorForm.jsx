@@ -10,9 +10,9 @@ import {
     dividerClass,
     buttonPrimaryClass,
     buttonSecondaryClass,
-} from "./formStyles";
+} from "./FormStyles";
 
-import { calculateRepairReplace } from "../../services/calculationService";
+import { calculateRepairReplace } from "../../Services/CalculationService";
 
 const STEPS = [
     { number: 1, label: "The item" },
