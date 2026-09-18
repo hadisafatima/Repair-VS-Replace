@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
     return (
         <section className="bg-slate-50">
@@ -22,12 +24,13 @@ function Hero() {
                     </p>
 
                     <div className="mt-8 flex flex-wrap gap-4">
-                        <a
+                        {/* <a
                             href="/calculator"
                             className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
                         >
                             Start Estimator →
-                        </a>
+                        </a> */}
+                        <Link to="/calculator" className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700">Start Estimator →</Link>
 
                         <a
                             href="#how-it-works"
