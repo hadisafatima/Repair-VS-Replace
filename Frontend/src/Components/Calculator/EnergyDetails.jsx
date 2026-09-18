@@ -4,7 +4,7 @@ import {
     helperClass,
     sectionTitleClass,
     sectionSubtitleClass,
-} from "./formStyles";
+} from "./FormStyles";
 
 function EnergyDetails({ enabled, formData, onToggle, onChange }) {
     return (

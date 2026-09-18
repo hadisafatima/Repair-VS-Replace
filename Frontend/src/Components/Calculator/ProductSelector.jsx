@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { getProductTypes } from "../../services/productService";
-import { inputClass, labelClass } from "./formStyles";
+import { getProductTypes } from "../../Services/ProductService";
+import { inputClass, labelClass } from "./FormStyles";
 
 function ProductSelector({ value, onChange }) {
     const [products, setProducts] = useState([]);

@@ -1,4 +1,4 @@
-import { inputClass, labelClass, helperClass } from "./formStyles";
+import { inputClass, labelClass, helperClass } from "./FormStyles";
 
 function ReplacementDetails({ formData, onChange }) {
     return (
