@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import Navbar from "../components/Navbar";
-import CalculatorForm from "../components/calculator/CalculatorForm";
-import ResultDisplay from "../components/calculator/ResultDisplay";
+import Navbar from "../Components/Navbar";
+import CalculatorForm from "../Components/Calculator/CalculatorForm";
+import ResultDisplay from "../Components/Calculator/ResultDisplay";
 
 function Calculator() {
     const [result, setResult] = useState(null);
