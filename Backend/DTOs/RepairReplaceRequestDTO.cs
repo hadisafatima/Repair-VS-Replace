@@ -15,7 +15,8 @@ namespace Backend.DTOs
         public int? ExpectedLifespanYears { get; set; }     // null → use product type default
         public decimal? ResidualValue { get; set; }         // trade-in / scrap value
 
-        public EnergyInputDto Energy { get; set; }          // optional
-        public string CurrencyCode { get; set; }            // "PKR", "USD"
+        public EnergyInputDto? Energy { get; set; }          // optional
+
+        // public string CurrencyCode { get; set; }            // "PKR", "USD"
     }
 }

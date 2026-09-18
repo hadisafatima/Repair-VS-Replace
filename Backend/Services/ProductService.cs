@@ -60,7 +60,10 @@ namespace Backend.Services
             }
 
             return _productTypes.Where(p => string.Equals(p.Category, category, StringComparison.OrdinalIgnoreCase)).ToList();
-            // return _productTypes.Select(p => string.Equals(p.Category, category, StringComparison.OrdinalIgnoreCase)).ToList();
+            // here we used "where()" bcuz we are selecting productType from a list productType, rather any thing from the list 
+            // produtTypes, hence we don't have to select anything we just need to filter out what we need
+            // THIS IS "LINQ (LANGUAGE INTERGRATED QUERY)" CONCEPT, LINQ HELPS TO EMBED QUERY CONCEPTS DIRECTLY INTO A 
+            // PROGRAMMING LANGUAGE (C# IN THIS CASE)
         }
 
         public CalculationRule? GetRuleById(string ruleId)
@@ -78,6 +81,8 @@ namespace Backend.Services
             var productType = GetProductTypeById(productTypeId)
                 ?? throw new InvalidOperationException(
                     $"Product type '{productTypeId}' does not exist.");
+            // The '??' is null-collasing operator, if the value on its left is not null it returns that value else it returns 
+            // the value on its right
  
             var rule = GetRuleById(productType.CalculationRuleId);
  

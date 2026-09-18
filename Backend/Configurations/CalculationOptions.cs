@@ -8,3 +8,7 @@ namespace Backend.Configuration
         public List<CalculationRule> CalculationRules { get; set; } = new();
     }
 }
+
+// this file is like a container for application's predefined data
+
+// this configuration is necessary bcuz this application has database

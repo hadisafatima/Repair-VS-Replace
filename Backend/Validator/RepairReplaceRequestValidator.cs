@@ -88,10 +88,10 @@ namespace Backend.Validators
                 .When(x => x.ResidualValue.HasValue)
                 .WithMessage("ResidualValue cannot be negative when provided.");
 
-            RuleFor(x => x.CurrencyCode)
-                .Length(3)
-                .When(x => !string.IsNullOrWhiteSpace(x.CurrencyCode))
-                .WithMessage("CurrencyCode should be a 3-letter ISO code, e.g. USD.");
+            // RuleFor(x => x.CurrencyCode)
+            //     .Length(3)
+            //     .When(x => !string.IsNullOrWhiteSpace(x.CurrencyCode))
+            //     .WithMessage("CurrencyCode should be a 3-letter ISO code, e.g. USD.");
 
             RuleFor(x => x.Energy!)
                 .SetValidator(new EnergyInputDtoValidator())

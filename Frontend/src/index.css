@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --color-paper: #EEEFEA;
+  --color-surface: #F7F6F1;
+  --color-ink: #20221F;
+  --color-line: #D8D6CC;
+
+  --color-repair: #B0632B;
+  --color-repair-soft: #E8D2BE;
+  --color-replace: #2C4A5E;
+  --color-replace-soft: #D6DEE2;
+
+  --font-display: "Fraunces", ui-serif, serif;
+  --font-sans: "Public Sans", ui-sans-serif, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}

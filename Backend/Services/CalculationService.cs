@@ -6,7 +6,7 @@ namespace Backend.Services
     public class CalculationService : ICalculationService
     {
         private readonly IProductService _productService;
-        private const decimal SensitivityPerturbation = 0.20m;
+        private const decimal SensitivityPerturbation = 0.20m; // 20%, this value is used for uncertainity or sensitivity analysis
 
         public CalculationService(IProductService productService)
         {
@@ -74,7 +74,7 @@ namespace Backend.Services
                 BreakEvenYears = breakEvenYears,
                 Factors = factors,
                 Uncertainty = uncertainty,
-                CurrencyCode = string.IsNullOrWhiteSpace(request.CurrencyCode) ? "USD" : request.CurrencyCode,
+                // CurrencyCode = string.IsNullOrWhiteSpace(request.CurrencyCode) ? "USD" : request.CurrencyCode,
                 CalculatedAtUtc = DateTime.UtcNow,
                 RuleSetVersion = _productService.GetRuleSetVersion()
             };

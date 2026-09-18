@@ -3,6 +3,10 @@ D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Configurations\rules.json
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.staticwebassets.endpoints.json
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.exe
+D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.deps.json
+D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.runtimeconfig.json
+D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.dll
+D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.pdb
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\FluentValidation.dll
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
@@ -32,9 +36,5 @@ D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\obj
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\obj\Debug\net10.0\Backend.dll
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\obj\Debug\net10.0\refint\Backend.dll
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\obj\Debug\net10.0\Backend.pdb
-D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.deps.json
-D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.runtimeconfig.json
-D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.dll
-D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\bin\Debug\net10.0\Backend.pdb
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\obj\Debug\net10.0\Backend.genruntimeconfig.cache
 D:\Documents\Hadisa's\projects\asp dotnet projects\Repair VS Replace\Backend\obj\Debug\net10.0\ref\Backend.dll

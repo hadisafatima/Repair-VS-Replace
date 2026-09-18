@@ -4,17 +4,9 @@ ASP.NET Core Web API using a layered architecture with MVC-style controllers and
 
 
 
-- complete CalculationService file
-- implement controllers
-- understand what U've not done urself
-- compelte the remaining backend folders
-
-
 
 ## NEXT:
-- resolve the error
-- understand the backend
-- make sure backend code is compelte
+- The form is submitted on its own
 
 
 
