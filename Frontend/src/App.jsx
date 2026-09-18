@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Calculator from "./pages/Calculator";
+import Home from "./Pages/Home";
+import Calculator from "./Pages/Calculator";
 
 function App() {
     return (
